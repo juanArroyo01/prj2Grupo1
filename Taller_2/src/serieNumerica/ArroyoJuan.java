@@ -13,7 +13,7 @@ public class ArroyoJuan {
      * @return result
      */
     public int jaS1(int size) {
-        int result = 0;
+        int result = 0, aux;
         
         return result;
     }
