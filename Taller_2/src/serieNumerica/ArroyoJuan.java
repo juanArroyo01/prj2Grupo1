@@ -11,11 +11,13 @@ public class ArroyoJuan {
      * 
      * @param size
      */
+
     public void jaS1(int size) {
         System.out.print("S1: ");
         for (int i = 0; i < size; i++) {
             System.out.print(fibbonacci(i) + " ");
         }
+
     }
 
     public int fibbonacci(int iter) {
