@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# Test file
+*\Test
+
 # Log file
 *.log
 
