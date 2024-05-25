@@ -2,7 +2,8 @@ package Test;
 
 import java.util.Scanner;
 
-import serieNumerica.ArroyoJuan;
+import serieNumerica.*;
+
 
 public class Main {
 
