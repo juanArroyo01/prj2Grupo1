@@ -1,5 +1,5 @@
 package serieCaracteres;
 
-public class SerieCaracteres{
+public class ArroyoJuan {
     
 }
