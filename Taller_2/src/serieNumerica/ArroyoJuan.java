@@ -10,11 +10,42 @@ public class ArroyoJuan {
      * desee.
      * 
      * @param size
-     * @return result
      */
-    public int jaS1(int size) {
-        int result = 0, aux;
-        
-        return result;
+    public void jaS1(int size) {
+        System.out.print("S1: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(fibbonacci(i) + " ");
+        }
     }
+
+    public int fibbonacci(int iter) {
+        if (iter <= 1) {
+            return iter;
+        }
+        int result, a = 0, b = 1;
+
+        for (int i = 2; i <= iter; i++) {
+            result = a + b;
+            a = b;
+            b = result;
+        }
+        return b;
+    }
+
+    /**
+     * Serie simple con un incremento de 3. El usuario ingresa
+     * el tamanyo, size, y se genera una serie con el maximo de
+     * repeticiones que el usuario desee.
+     * 
+     * @param size
+     */
+    public void jaS7(int size) {
+        int aux = 1;
+        System.out.print("S7: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(aux + " ");
+            aux += 3;
+        }
+    }
+
 }
