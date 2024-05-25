@@ -4,8 +4,21 @@ s.ppSerie1();
 
 -> Arroyo
 
-Serie s = new Serie();
-s.ppSerie1();
+    Serie Numerica 
+
+    ArroyoJuan ajSn = new ArroyoJuan();
+    System.out.print("Ingrese el numero: ");
+    int size = Integer.parseInt(keyboard.nextLine());
+    
+    ajSn.jaS1(size);
+    System.out.println();
+    ajSn.jaS7(size);
+
+    Serie Caracteres
+
+    ArroyoJuan aj = new ArroyoJuan();
+    aj.jaSc1(size);
+    aj.jaSc7(size);
 
 -> Benavides
 

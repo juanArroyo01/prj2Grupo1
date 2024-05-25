@@ -2,43 +2,32 @@ package Test;
 
 import java.util.Scanner;
 
-import serieNumerica.*;
-
+import figuras.ArroyoJuan;
 
 public class Main {
 
     static Scanner keyboard = new Scanner(System.in);
 
     public static void main(String[] args) {
-        ArroyoJuan ajSn = new ArroyoJuan();
-        // System.out.print("Ingrese el numero: ");
-        // int size = Integer.parseInt(keyboard.nextLine());
 
-        ajSn.jaS1(0);
+        ArroyoJuan aj = new ArroyoJuan();
+        // aj.jaF4(size, symb);
+            
+        aj.jaF7(0);
         System.out.println();
-        ajSn.jaS1(1);
+        aj.jaF7(1);
         System.out.println();
-        ajSn.jaS1(2);
+        aj.jaF7(2);
         System.out.println();
-        ajSn.jaS1(3);
+        aj.jaF7(3);
         System.out.println();
-        ajSn.jaS1(4);
+        aj.jaF7(4);
         System.out.println();
-        ajSn.jaS1(5);
+        aj.jaF7(5);
         System.out.println();
-        ajSn.jaS1(6);
+        aj.jaF7(6);
         System.out.println();
-        ajSn.jaS1(7);
-        System.out.println();
-        ajSn.jaS1(8);
-        System.out.println();
-        ajSn.jaS1(9);
-        System.out.println();
-        ajSn.jaS1(10);
+        aj.jaF7(7);
 
-        // Creacion de propios metodos y variables
-        // ajSn.jaS1(size);
-        // System.out.println();
-        // ajSn.jaS7(size);
     }
 }
