@@ -28,6 +28,6 @@
 hs_err_pid*
 replay_pid*
 
-*.txt
+codeMain.txt
 
 .gitignore
