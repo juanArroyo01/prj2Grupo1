@@ -2,7 +2,7 @@ package Utils;
 
 import java.util.Scanner;
 
-import exceptions.NegativeNumbers;
+import exceptions.*;
 
 public class FlujoEntrada {
     private Scanner keyboard = new Scanner(System.in);
@@ -27,7 +27,34 @@ public class FlujoEntrada {
                     .println("\nHa ingresado un texto, texto vacio o simbolo , ingrese un valor numerico positivo.\n");
             return numeroFlujoEntrada();
         }
+    }
 
+    public char caracterFlujoEntrada() {
+        String aux = null;
+        char symb;
+        try {
+            System.out.print("-> ");
+            aux = keyboard.nextLine();
+            if (aux.length() > 1) {
+                throw new CharException(
+                        "\nHa ingresado un texto. De la cadena del texto, se eligio aleatoriamente un caracter.\n", aux);
+            } else if (aux.isEmpty() || aux.isBlank()) {
+                throw new CharException("\nHa ingresado un texto vacio. Ingrese nuevamente.\n");
+            } else {
+                symb = aux.charAt(0);
+                if (Character.isWhitespace(symb)) {
+                    throw new CharException("\nHa ingresado un espacio en blanco, ingrese nuevamente.\n", symb);
+                }
+                return symb;
+            }
+        } catch (CharException e) {
+            System.out.println(e.getMessage());
+            if (aux.isEmpty() || aux.isBlank()) {
+                return caracterFlujoEntrada();
+            }
+            symb = e.getCharInString();
+        return symb;
+        }
     }
 
 }
