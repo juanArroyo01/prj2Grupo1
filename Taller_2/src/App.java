@@ -13,5 +13,7 @@ public class App {
         size = fEntrada.numeroFlujoEntrada();
 
         System.out.println("Numero de repeticiones: " + size);
+
+        System.out.println("Test");
     }
 }
