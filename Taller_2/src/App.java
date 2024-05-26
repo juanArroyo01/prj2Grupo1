@@ -1,8 +1,17 @@
+import Utils.FlujoEntrada;
+
 public class App {
 
     public static void main(String[] args) throws Exception {
-    
+        FlujoEntrada fEntrada = new FlujoEntrada();
+
+        int size;
+
         System.out.println("\t---> Taller 2 <---");
-        System.out.println("Test 1: Fork Solucionado 2.0.1 segundo branch");
+
+        System.out.println("Ingresa el numero de repeticiones.");
+        size = fEntrada.numeroFlujoEntrada();
+
+        System.out.println("Numero de repeticiones: " + size);
     }
 }
