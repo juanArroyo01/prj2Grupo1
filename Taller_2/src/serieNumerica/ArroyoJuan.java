@@ -20,13 +20,13 @@ public class ArroyoJuan {
 
     }
 
-    public int fibbonacci(int iter) {
-        if (iter <= 1) {
-            return iter;
+    public int fibbonacci(int size) {
+        if (size <= 1) {
+            return size;
         }
         int result, a = 0, b = 1;
 
-        for (int i = 2; i <= iter; i++) {
+        for (int i = 2; i <= size; i++) {
             result = a + b;
             a = b;
             b = result;
