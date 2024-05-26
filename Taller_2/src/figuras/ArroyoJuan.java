@@ -11,13 +11,13 @@ public class ArroyoJuan {
      * @param size
      * @param symb
      */
-    public void jaF4(int size, char symb) {
+    public void jaF4(int size) {
         for (int i = 0; i <= size; i++) {
             for (int j = size; j > i; j--) {
                 System.out.print("  ");
             }
             for (int j = 0; j < i; j++) {
-                System.out.print(symb + " ");
+                System.out.print("* ");
             }
             System.out.println();
         }
@@ -42,11 +42,10 @@ public class ArroyoJuan {
         }
     }
 
-
     /**
      * Triangulo de Pascal.
-     * El usuario ingresa el size del triangulo, 
-     * se genera el triangulo a partir de los 
+     * El usuario ingresa el size del triangulo,
+     * se genera el triangulo a partir de los
      * parametros pasados.
      * 
      * @param size
