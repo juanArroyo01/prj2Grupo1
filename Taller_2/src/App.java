@@ -6,6 +6,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         FlujoEntrada fEntrada = new FlujoEntrada();
         ArroyoJuan jaSn = new ArroyoJuan();
+        serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
+
 
         System.out.println("Grupo 1 \nIntegrantes:");
         System.out.println("arroyo.juan");
@@ -29,6 +31,21 @@ public class App {
         jaSn.setSize(fEntrada.numeroFlujoEntrada());
 
         jaSn.jaS7();
+
+        // ------------------------------------------------------------------------
+
+        System.out.println("Series caracteres:");
+        System.out.println("Serie 1");
+        System.out.println("\nIngrese el tamaño que desee de la serie.");
+        jaSc.setSize(fEntrada.numeroFlujoEntrada());
+
+        jaSc.jaSc1();
+
+        System.out.println("Serie 7");
+        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+        jaSc.setSize(fEntrada.numeroFlujoEntrada());
+
+        jaSc.jaSc7();
 
     }
 }

@@ -2,6 +2,28 @@ package serieCaracteres;
 
 public class ArroyoJuan {
 
+    char symb;
+    int size;
+
+    public ArroyoJuan(){}
+
+    public int getSize(){
+        return size;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+
+    public char getSymb() {
+        return symb;
+    }
+
+    public void setSymb(char symb) {
+        this.symb = symb;
+    }
+
+
     /**
      * Serie de caracteres.
      * El usuario ingresa el tamanyo, size, y se genera una
@@ -10,13 +32,13 @@ public class ArroyoJuan {
      * 
      * @param size
      */
-    public void jaSc1(int size) {
+    public void jaSc1() {
         System.out.print("S1: ");
         for (int i = 0; i < size; i++) {
             if (i % 2 == 0) {
                 System.out.print("+ ");
             } else {
-                System.out.print("- ");
+                System.out.print(symb + " ");
             }
         }
     }
@@ -32,7 +54,7 @@ public class ArroyoJuan {
      * 
      * @param size
      */
-    public void jaSc7(int size) {
+    public void jaSc7() {
         char vowelAscii = 97, times = 2; // Hasta 122
 
         System.out.print("S7: ");
@@ -49,5 +71,9 @@ public class ArroyoJuan {
             times += 2;
         }
     }
+
+
+
+
 
 }

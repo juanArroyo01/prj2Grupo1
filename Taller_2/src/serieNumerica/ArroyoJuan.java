@@ -4,8 +4,7 @@ public class ArroyoJuan {
 
     private int size;
 
-    public ArroyoJuan() {
-    }
+    public ArroyoJuan() {}
 
     public int getSize() {
         return size;
