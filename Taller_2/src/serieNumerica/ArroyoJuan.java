@@ -29,7 +29,7 @@ public class ArroyoJuan {
         for (int i = 0; i < size; i++) {
             System.out.print(fibbonacci(i) + " ");
         }
-
+        System.out.println();
     }
 
     public int fibbonacci(int i) {
@@ -60,6 +60,7 @@ public class ArroyoJuan {
             System.out.print(aux + " ");
             aux += 3;
         }
+        System.out.println();
     }
 
 }

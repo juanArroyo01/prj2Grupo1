@@ -10,6 +10,7 @@ public class FlujoEntrada {
     public int numeroFlujoEntrada() {
         int num;
         try {
+            System.out.println("Digite el numero.");
             System.out.print("-> ");
             num = Integer.parseInt(keyboard.nextLine());
             if (num < 0) {
@@ -33,11 +34,13 @@ public class FlujoEntrada {
         String aux = null;
         char symb;
         try {
+            System.out.println("Digite el caracter.");
             System.out.print("-> ");
             aux = keyboard.nextLine();
             if (aux.length() > 1) {
                 throw new CharException(
-                        "\nHa ingresado un texto. De la cadena del texto, se eligio aleatoriamente un caracter.\n", aux);
+                        "\nHa ingresado un texto. De la cadena del texto, se eligio aleatoriamente un caracter.\n",
+                        aux);
             } else if (aux.isEmpty() || aux.isBlank()) {
                 throw new CharException("\nHa ingresado un texto vacio. Ingrese nuevamente.\n");
             } else {
@@ -53,7 +56,7 @@ public class FlujoEntrada {
                 return caracterFlujoEntrada();
             }
             symb = e.getCharInString();
-        return symb;
+            return symb;
         }
     }
 

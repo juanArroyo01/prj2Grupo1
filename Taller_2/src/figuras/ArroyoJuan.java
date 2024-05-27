@@ -11,13 +11,13 @@ public class ArroyoJuan {
      * @param size
      * @param symb
      */
-    public void jaF4(int size) {
+    public void jaF4(int size, char symb) {
         for (int i = 0; i <= size; i++) {
             for (int j = size; j > i; j--) {
                 System.out.print("  ");
             }
             for (int j = 0; j < i; j++) {
-                System.out.print("* ");
+                System.out.print(symb + " ");
             }
             System.out.println();
         }
@@ -40,6 +40,7 @@ public class ArroyoJuan {
             aux += 4;
             System.out.print('|');
         }
+        System.out.println();
     }
 
     /**
@@ -60,6 +61,7 @@ public class ArroyoJuan {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
 }
