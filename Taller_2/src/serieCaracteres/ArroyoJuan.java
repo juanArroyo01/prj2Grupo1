@@ -5,13 +5,14 @@ public class ArroyoJuan {
     char symb;
     int size;
 
-    public ArroyoJuan(){}
+    public ArroyoJuan() {
+    }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 
-    public void setSize(int size){
+    public void setSize(int size) {
         this.size = size;
     }
 
@@ -23,7 +24,6 @@ public class ArroyoJuan {
         this.symb = symb;
     }
 
-
     /**
      * Serie de caracteres.
      * El usuario ingresa el tamanyo, size, y se genera una
@@ -32,7 +32,7 @@ public class ArroyoJuan {
      * 
      * @param size
      */
-    public void jaSc1() {
+    public void jaSc1(int size, char symb) {
         System.out.print("S1: ");
         for (int i = 0; i < size; i++) {
             if (i % 2 == 0) {
@@ -41,14 +41,15 @@ public class ArroyoJuan {
                 System.out.print(symb + " ");
             }
         }
+        System.out.println();
     }
 
     /**
      * Serie de caracteres.
      * El usuario ingresa el tamanyo, size, y se genera una
      * serie con el maximo de repeticiones que el usuario
-     * desee. Se utiliza codigo ASCII para aprovechar el 
-     * alfabeto completo. Sea el caso que el usario ingrese 
+     * desee. Se utiliza codigo ASCII para aprovechar el
+     * alfabeto completo. Sea el caso que el usario ingrese
      * numeros mayores a 27 (maximo del alfabeto), empezara
      * nuevamente desde la a.
      * 
@@ -70,10 +71,7 @@ public class ArroyoJuan {
             }
             times += 2;
         }
+        System.out.println();
     }
-
-
-
-
 
 }
