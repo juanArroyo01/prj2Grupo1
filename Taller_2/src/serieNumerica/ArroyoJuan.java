@@ -1,5 +1,10 @@
 package serieNumerica;
 
+/**
+ * @author: Juan Arroyo
+ * @version: 1.0
+ * Serie numerica 1 y 7 utilizando for
+ */
 public class ArroyoJuan {
 
     private int size;
