@@ -1,2 +1,43 @@
 //Poner todo el codigo aqui
 
+BenavidesJakeSn jbsn= new BenavidesJakeSn();
+BenavidesJakeSc jbsc= new BenavidesJakeSn();
+BenavidesJakeSf jbsf= new BenavidesJakeSn();
+
+// series numericas
+System.out.println("\nSerie 2");
+System.out.println("\nIngrese el tamaño que desee de la serie.");
+jbsn.jbSn2(fEntrada.numeroFlujoEntrada());
+
+System.out.println("\nSerie 8");
+System.out.println("\nIngrese el tamaño que desee de la serie.");
+jbsn.jbSn8(fEntrada.numeroFlujoEntrada());
+
+// series de caracteres
+System.out.println("\nSerie 2");
+System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+jbsc.jbSc2(fEntrada.numeroFlujoEntrada());
+
+System.out.println("\nSerie 8");
+System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+jbsc.jbSc8(fEntrada.numeroFlujoEntrada());
+
+//serie figuras
+System.out.println("\nFigura 5");
+System.out.println("\nIngrese el tamaño que desee de la serie.");
+jbsf.jbSf5(fEntrada.caracterFlujoEntrada(), fEntrada.numeroFlujoEntrada());
+
+System.out.println("\nFigura 8");
+System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+jbsf.jbSf8(fEntrada.numeroFlujoEntrada());
+
+System.out.println("\nFigura 16");
+System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+jbsf.jbSf16(fEntrada.numeroFlujoEntrada());
+
+
+
+
+
+
+        
