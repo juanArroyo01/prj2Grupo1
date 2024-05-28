@@ -102,7 +102,7 @@ public class App {
 
         System.out.println("\nFigura 7");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
-        jaf.jaF7(fEntrada.numeroFlujoEntrada());
+        jaf.jaF7(fEntrada.numeroFlujoEntrada(), fEntrada.caracterFlujoEntrada());
 
         System.out.println("\nFigura 10");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
@@ -120,13 +120,13 @@ public class App {
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
         jaf.jaf15(fEntrada.numeroFlujoEntrada());
 
-        System.out.println("\nFigura 15");
-        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
-        ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
-
         System.out.println("\nFigura 18");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
         cssf.csF18(fEntrada.numeroFlujoEntrada());
+
+        System.out.println("\nFigura 19");
+        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+        ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
 
     }
 
