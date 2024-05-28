@@ -20,7 +20,7 @@ public class CasaFernandoSc {
 /**
  * esta serie permite ingresar un tamaño 
  * y un caracter mientras que los demas 
- * son caracteres ya quemados.
+ * son caracteres ya predeterminados.
  * @param carac
  * @param tam
  */

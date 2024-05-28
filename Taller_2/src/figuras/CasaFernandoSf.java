@@ -87,7 +87,7 @@ public class CasaFernandoSf {
     }
     /**
      * Permite el ingreso de un entero para definir
-     * el tamaño de la figura a construir.
+     * el tamaño de la figura a construir
      * 
      * @param tam
      */

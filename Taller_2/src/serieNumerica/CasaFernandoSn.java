@@ -39,7 +39,7 @@ public class CasaFernandoSn {
     /**
      *  permite ingresar un tamaño 
      * para poder definir la longitud 
-     * de una serie numerica ya definida 
+     * de una serie numerica ya definida.
      * @param tam
      */
     public void csSn10(int tam) {
