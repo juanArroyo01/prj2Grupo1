@@ -1,5 +1,10 @@
 package serieCaracteres;
 
+/**
+ * @author: Juan Arroyo
+ * @version: 1.0
+ * Serie de caracteres 1 y 7 utilizando for
+ */
 public class ArroyoJuan {
 
     char symb;

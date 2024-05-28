@@ -1,5 +1,10 @@
 package figuras;
 
+/**
+ * @author: Juan Arroyo
+ * @version: 1.0
+ * Figuras 4, 7 y 15 utilizando for
+ */
 public class ArroyoJuan {
 
     /**
