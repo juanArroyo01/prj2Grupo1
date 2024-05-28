@@ -1,8 +1,11 @@
 
 import Utils.FlujoEntrada;
+import figuras.CasaFernandoSf;
 import figuras.YupanquiNiurkaSf;
+import serieCaracteres.CasaFernandoSc;
 import serieCaracteres.YupanquiNiurkaSc;
 import serieNumerica.ArroyoJuan;
+import serieNumerica.CasaFernandoSn;
 import serieNumerica.YupanquiNiurkaSn;
 import serieNumerica.ChimarroMarlon;
 
@@ -23,6 +26,10 @@ public class App {
         YupanquiNiurkaSc ynsc = new YupanquiNiurkaSc();
         YupanquiNiurkaSf ynsf = new YupanquiNiurkaSf();
 
+        CasaFernandoSn cssn = new CasaFernandoSn();
+        CasaFernandoSc cssc = new CasaFernandoSc();
+        CasaFernandoSf cssf = new CasaFernandoSf();
+
         System.out.println("Grupo 1 \nIntegrantes:");
         System.out.println("arroyo.juan");
         System.out.println("benavides.jake");
@@ -38,9 +45,15 @@ public class App {
         jaSn.setSize(fEntrada.numeroFlujoEntrada());
         jaSn.jaS1();
 
+<<<<<<< HEAD
         System.out.println("\nSerie 5");
         cmSn5.setSize(fEntrada.numeroFlujoEntrada());
         cmSn5.mcSn();
+=======
+        System.out.println("\nSerie 4");
+        System.out.println("\nIngrese el tamaño que desee de la serie.");
+        cssn.csSn4(fEntrada.numeroFlujoEntrada());
+>>>>>>> c95f2f703665abb1aaccc62c3a30a664b6c6524c
 
         System.out.println("\nSerie 6");
         System.out.println("\nIngrese el tamaño que desee de la serie.");
@@ -50,6 +63,10 @@ public class App {
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         jaSn.setSize(fEntrada.numeroFlujoEntrada());
         jaSn.jaS7();
+
+        System.out.println("\nSerie 10");
+        System.out.println("\nIngrese el tamaño que desee de la serie.");
+        cssn.csSn10(fEntrada.numeroFlujoEntrada());
 
         System.out.println("\nSerie 12");
         System.out.println("\nIngrese el tamaño que desee de la serie.");
@@ -64,9 +81,15 @@ public class App {
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         jaSc.jaSc1(fEntrada.numeroFlujoEntrada(), fEntrada.caracterFlujoEntrada());
 
+<<<<<<< HEAD
         System.out.println("\nSerie 5");
         mcsc.setSize(fEntrada.numeroFlujoEntrada());
         mcsc.mcSc5();
+=======
+        System.out.println("Serie 4");
+        System.out.println("\nIngrese el tamaño que desee de la serie.");
+        cssc.csSc4(fEntrada.caracterFlujoEntrada(), fEntrada.numeroFlujoEntrada());
+>>>>>>> c95f2f703665abb1aaccc62c3a30a664b6c6524c
 
         System.out.println("\nSerie 6");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
@@ -83,11 +106,19 @@ public class App {
 
         System.out.println("\nFiguras:");
 
+<<<<<<< HEAD
         System.out.println("\nFigura 2");
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         mcf.mcf2(fEntrada.numeroFlujoEntrada(), fEntrada.caracterFlujoEntrada());              
 
         System.out.println("\nFigura 4");
+=======
+        System.out.println("\nFigura 1");
+        System.out.println("\nIngrese el tamaño que desee de la serie.");
+        cssf.csF1(fEntrada.caracterFlujoEntrada(), fEntrada.numeroFlujoEntrada());
+
+        System.out.println("\nFigura 3");
+>>>>>>> c95f2f703665abb1aaccc62c3a30a664b6c6524c
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         ynsf.ForynSf3(fEntrada.numeroFlujoEntrada());
 
@@ -99,6 +130,7 @@ public class App {
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
         jaf.jaF7(fEntrada.numeroFlujoEntrada());
 
+<<<<<<< HEAD
         System.out.println("\nFigura 11");
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         mcf.mcf11(fEntrada.numeroFlujoEntrada());
@@ -106,6 +138,15 @@ public class App {
         System.out.println("\nFigura 13");
         System.out.println("\nIngrese el tamaño que desee de la serie.");
         mcf.mcf13(fEntrada.numeroFlujoEntrada());  
+=======
+        System.out.println("\nFigura 10");
+        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+        cssf.csF10(fEntrada.caracterFlujoEntrada(), fEntrada.numeroFlujoEntrada());
+
+        System.out.println("\nFigura 12");
+        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+        cssf.csF12(fEntrada.numeroFlujoEntrada());
+>>>>>>> c95f2f703665abb1aaccc62c3a30a664b6c6524c
 
         System.out.println("\nFigura 14");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
@@ -118,6 +159,10 @@ public class App {
         System.out.println("\nFigura 15");
         System.out.println("\n\nIngrese el tamaño que desee de la serie.");
         ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
+
+        System.out.println("\nFigura 18");
+        System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+        cssf.csF18(fEntrada.numeroFlujoEntrada());
 
     }
 
