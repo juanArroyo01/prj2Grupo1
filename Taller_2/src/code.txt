@@ -34,10 +34,3 @@ jbsf.jbSf8(fEntrada.numeroFlujoEntrada());
 System.out.println("\nFigura 16");
 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
 jbsf.jbSf16(fEntrada.numeroFlujoEntrada());
-
-
-
-
-
-
-        
