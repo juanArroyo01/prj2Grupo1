@@ -9,6 +9,6 @@
 hs_err_pid*
 replay_pid*
 
-codeMain.txt
+*.txt
 
 Taller_2/src/test/Main.java
