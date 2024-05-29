@@ -1,15 +1,22 @@
 package serieCaracteres;
 
 public class CasaAntonelasc {
-    public void caSc3(int numero) {
+   
+    /*
+     * sc3: ++ +++ +++++ +++++++ +++++++++++ +++++++++++++ ...
+     * Numeros primos, pero en lugar de imprimir
+     * numeros se imprime el caracter "+".
+     * 
+     */
+    public void caSc3(int size) {
         int cacontador = 0;
         int canum = 2; 
         int caprimoactual = 2; 
 
-        while (cacontador< numero) {
-            // Verificar si el número actual es primo
+        while (cacontador< size) {
+            
             boolean esPrimo = true;
-            for (int i = 2; i <= canum / 2; i++) { // Sin usar Math.sqrt
+            for (int i = 2; i <= canum / 2; i++) { 
                 if (canum % i == 0) {
                     esPrimo = false;
                     break;
@@ -17,7 +24,7 @@ public class CasaAntonelasc {
             }
             
             if (esPrimo) {
-                // Imprimir el número primo con '+'
+                
                 for (int i = 0; i < caprimoactual; i++) {
                     System.out.print("+");
                 }
@@ -25,51 +32,50 @@ public class CasaAntonelasc {
                 cacontador++;
             }
             
-            // Mover al siguiente número
             canum++;
             caprimoactual++;
         }
         System.out.println();
     }
 
-    
+    /*
+     * sc9: a b c dd eee fffff gggggggg ...
+     * Serie de Fibonacci con el abecedario
+     */
 
-    public void caSc9(int numero) {
-        if (numero <= 0) return;
+    public void caSc9(int size) {
+        if (size <= 0) return;
     
-        char currentChar = 'a'; // Inicia con 'a'
-        int prev1 = 1; // Cantidad para 'a'
-        int prev2 = 1; // Cantidad para 'b'
-        int currentCount;
+        char acactualChar = 'a'; 
+        int acprev1 = 1; 
+        int acprev2 = 1; 
+        int accontador;
     
         System.out.print("S7: ");
     
-        for (int i = 0; i < numero; i++) {
+        for (int i = 0; i < size; i++) {
             if (i < 3) {
-                // Imprime 'a', 'b', 'c' una sola vez
-                currentCount = 1;
+                
+                accontador = 1;
             } else {
-                // Para los demás, suma los dos términos anteriores
-                currentCount = prev1 + prev2;
-                prev1 = prev2;
-                prev2 = currentCount;
+                
+                accontador = acprev1 + acprev2;
+                acprev1 = acprev2;
+                acprev2 = accontador;
             }
     
-            // Imprime el carácter actual 'currentCount' veces
-            for (int j = 0; j < currentCount; j++) {
-                System.out.print(currentChar);
+            for (int j = 0; j < accontador; j++) {
+                System.out.print(acactualChar);
             }
     
-            // Espacio entre caracteres, excepto después del último
-            if (i < numero - 1) {
+            if (i < size - 1) {
                 System.out.print(" ");
             }
     
-            // Incrementa el carácter actual
-            currentChar++;
+            acactualChar++;
         }
     
-        System.out.println(); // Nueva línea al final
+        System.out.println(); 
     }
     
 }
