@@ -3,7 +3,7 @@ package figuras;
 /**
  * @author: Juan Arroyo
  * @version: 1.0
- * Figuras 4, 7 y 15 utilizando for
+ *           Figuras 4, 7 y 15 utilizando for
  */
 public class ArroyoJuan {
 
@@ -35,7 +35,7 @@ public class ArroyoJuan {
      * 
      * @param size
      */
-    public void jaF7(int size) {
+    public void jaF7(int size, char symb) {
         int aux = 4;
         for (int i = 0; i < size; i++) {
             System.out.print("___\n");
@@ -43,7 +43,7 @@ public class ArroyoJuan {
                 System.out.print(" ");
             }
             aux += 4;
-            System.out.print('|');
+            System.out.print(symb);
         }
         System.out.println();
     }
