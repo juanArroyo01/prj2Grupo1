@@ -30,10 +30,11 @@ public class ArroyoJuan {
 
     /**
      * Figura escalonar con caracteres.
-     * El usuario ingresa tamanyo, se genera una
+     * El usuario ingresa tamanyo y caracter, se genera una
      * figura a partir de los parametros pasados.
      * 
      * @param size
+     * @param symb
      */
     public void jaF7(int size, char symb) {
         int aux = 4;
