@@ -1,19 +1,12 @@
 
 import Utils.FlujoEntrada;
-import figuras.BenavidesJakeSf;
-import figuras.CasaAntonelafig;
-import figuras.CasaFernandoSf;
+import figuras.*;
 import figuras.YupanquiNiurkaSf;
-import serieCaracteres.BenavidesJakeSc;
-import serieCaracteres.CasaAntonelasc;
-import serieCaracteres.CasaFernandoSc;
+import serieCaracteres.*;
 import serieCaracteres.YupanquiNiurkaSc;
 import serieNumerica.ArroyoJuan;
-import serieNumerica.BenavidesJakeSn;
-import serieNumerica.CasaAntonelasn;
-import serieNumerica.CasaFernandoSn;
+import serieNumerica.*;
 import serieNumerica.YupanquiNiurkaSn;
-import serieNumerica.ChimarroMarlon;
 
 public class App {
         static FlujoEntrada fEntrada = new FlujoEntrada();
@@ -24,7 +17,7 @@ public class App {
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
                 figuras.ArroyoJuan jaf = new figuras.ArroyoJuan();
 
-                ChimarroMarlon cmSn5 = new ChimarroMarlon();
+                serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
 
@@ -226,7 +219,7 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
 
-                System.out.println("TEST");
+
 
         }
 
