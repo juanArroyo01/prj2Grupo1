@@ -226,7 +226,7 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
 
-                System.out.println("TEST");
+
 
         }
 
