@@ -5,9 +5,14 @@ import java.util.Scanner;
 import exceptions.*;
 
 public class FlujoEntrada {
-    private Scanner keyboard = new Scanner(System.in);
+    static private Scanner keyboard = new Scanner(System.in);
 
-    public int numeroFlujoEntrada() {
+    public static String cadenaFlujoEntrada() {
+        System.out.print("Ingrese su respuesta.\n-> ");
+        return keyboard.nextLine();
+    }
+
+    public static int numeroFlujoEntrada() {
         int num;
         try {
             System.out.println("Digite el numero.");
@@ -30,7 +35,7 @@ public class FlujoEntrada {
         }
     }
 
-    public char caracterFlujoEntrada() {
+    public static char caracterFlujoEntrada() {
         String aux = null;
         char symb;
         try {
