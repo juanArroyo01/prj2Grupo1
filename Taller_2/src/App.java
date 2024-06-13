@@ -1,12 +1,9 @@
 
 import Utils.FlujoEntrada;
 import figuras.*;
-import figuras.YupanquiNiurkaSf;
 import serieCaracteres.*;
-import serieCaracteres.YupanquiNiurkaSc;
 import serieNumerica.ArroyoJuan;
 import serieNumerica.*;
-import serieNumerica.YupanquiNiurkaSn;
 
 public class App {
         public static void main(String[] args) throws Exception {
@@ -14,6 +11,7 @@ public class App {
                 ArroyoJuan jaSn = new ArroyoJuan();
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
                 figuras.ArroyoJuan jaf = new figuras.ArroyoJuan();
+                cadenaCaracteres.ArroyoJuan jacc = new cadenaCaracteres.ArroyoJuan();
 
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
@@ -217,8 +215,19 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 ynsf.ForynSf19(FlujoEntrada.numeroFlujoEntrada());
 
+                // ------------------------------------------------------------------------
 
+                System.out.println("\n----------------------------------------------------------\n");
 
+                System.out.println("\nCadena de caracteres:");
+
+                System.out.println("\nCadena 1");
+                System.out.println("\nIngrese la frase que desee verificar.");
+                int aux = jacc.jaC01(FlujoEntrada.cadenaFlujoEntrada());
+                if (aux != -1)
+                        System.out.println("Salida: tiene " + aux + " vocales.");
+                else
+                        System.out.println("Salida: tiene " + 0 + " vocales.");
         }
 
 }

@@ -10,6 +10,10 @@ public class ArroyoJuan {
                 count++;
             }
         }
-        return count;
+        if (count != 0) {
+            return count;
+        } else {
+            return -1;
+        }
     }
 }

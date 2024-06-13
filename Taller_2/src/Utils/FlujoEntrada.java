@@ -6,10 +6,22 @@ import exceptions.*;
 
 public class FlujoEntrada {
     static private Scanner keyboard = new Scanner(System.in);
+    static private String phrase;
+
+    public FlujoEntrada() {
+        phrase = "";
+    }
+    
 
     public static String cadenaFlujoEntrada() {
-        System.out.print("Ingrese su respuesta.\n-> ");
-        return keyboard.nextLine();
+        System.out.print("-> ");
+        setPhrase(keyboard.nextLine());
+        if (getPhrase() != null && !getPhrase().isEmpty()) {
+            return phrase;
+        } else{
+            System.out.println("\n\nHa ingresado una cadena de texto inválido, ingrese nuevamente.");
+            return cadenaFlujoEntrada();
+        } 
     }
 
     public static int numeroFlujoEntrada() {
@@ -63,6 +75,26 @@ public class FlujoEntrada {
             symb = e.getCharInString();
             return symb;
         }
+    }
+
+
+    public static Scanner getKeyboard() {
+        return keyboard;
+    }
+
+
+    public static void setKeyboard(Scanner keyboard) {
+        FlujoEntrada.keyboard = keyboard;
+    }
+
+
+    public static String getPhrase() {
+        return phrase;
+    }
+
+
+    public static void setPhrase(String phrase) {
+        FlujoEntrada.phrase = phrase;
     }
 
 }
