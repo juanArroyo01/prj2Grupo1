@@ -9,6 +9,7 @@
 hs_err_pid*
 replay_pid*
 
+MainJuan.java
 *.txt
 
 Taller_2/src/test/Main.java
