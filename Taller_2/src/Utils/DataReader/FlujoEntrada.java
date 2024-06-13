@@ -1,8 +1,8 @@
-package Utils;
+package Utils.DataReader;
 
 import java.util.Scanner;
 
-import exceptions.*;
+import Utils.exceptions.*;
 
 public class FlujoEntrada {
     static private Scanner keyboard = new Scanner(System.in);

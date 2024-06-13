@@ -1,5 +1,5 @@
 
-import Utils.FlujoEntrada;
+import Utils.DataReader.FlujoEntrada;
 import figuras.*;
 import serieCaracteres.*;
 import serieNumerica.ArroyoJuan;
