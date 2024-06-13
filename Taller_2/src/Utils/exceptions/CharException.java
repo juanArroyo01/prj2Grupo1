@@ -1,4 +1,4 @@
-package exceptions;
+package Utils.exceptions;
 
 import java.util.Random;
 

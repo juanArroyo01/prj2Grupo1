@@ -1,4 +1,4 @@
-package exceptions;
+package Utils.exceptions;
 
 public class NegativeNumbers extends Exception {
 
