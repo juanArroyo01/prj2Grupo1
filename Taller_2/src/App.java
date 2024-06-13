@@ -8,6 +8,7 @@ import serieNumerica.*;
 public class App {
         public static void main(String[] args) throws Exception {
 
+                // Objects
                 ArroyoJuan jaSn = new ArroyoJuan();
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
                 figuras.ArroyoJuan jaf = new figuras.ArroyoJuan();
@@ -32,6 +33,10 @@ public class App {
                 CasaAntonelasn acsn = new CasaAntonelasn();
                 CasaAntonelasc acsc = new CasaAntonelasc();
                 CasaAntonelafig acfig = new CasaAntonelafig();
+
+                // Variable
+                int aux;
+                String cadena;
 
                 System.out.println("Grupo 1 \nIntegrantes:");
                 System.out.println("arroyo.juan");
@@ -223,11 +228,16 @@ public class App {
 
                 System.out.println("\nCadena 1");
                 System.out.println("\nIngrese la frase que desee verificar.");
-                int aux = jacc.jaC01(FlujoEntrada.cadenaFlujoEntrada());
+                aux = jacc.jaC01(FlujoEntrada.cadenaFlujoEntrada());
                 if (aux != -1)
                         System.out.println("Salida: tiene " + aux + " vocales.");
                 else
                         System.out.println("Salida: tiene " + 0 + " vocales.");
+
+                System.out.println("\nCadena 7");
+                System.out.println("\nIngrese la frase que desee poner en mayusculas.");
+                cadena = jacc.jaC07(FlujoEntrada.cadenaFlujoEntrada());
+                System.out.println("Salida: " + cadena);
         }
 
 }

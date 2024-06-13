@@ -11,17 +11,16 @@ public class FlujoEntrada {
     public FlujoEntrada() {
         phrase = "";
     }
-    
 
     public static String cadenaFlujoEntrada() {
         System.out.print("-> ");
         setPhrase(keyboard.nextLine());
-        if (getPhrase() != null && !getPhrase().isEmpty()) {
+        if (getPhrase() != null && !getPhrase().isEmpty() && !getPhrase().isBlank()) {
             return phrase;
-        } else{
+        } else {
             System.out.println("\n\nHa ingresado una cadena de texto inválido, ingrese nuevamente.");
             return cadenaFlujoEntrada();
-        } 
+        }
     }
 
     public static int numeroFlujoEntrada() {
@@ -77,21 +76,17 @@ public class FlujoEntrada {
         }
     }
 
-
     public static Scanner getKeyboard() {
         return keyboard;
     }
-
 
     public static void setKeyboard(Scanner keyboard) {
         FlujoEntrada.keyboard = keyboard;
     }
 
-
     public static String getPhrase() {
         return phrase;
     }
-
 
     public static void setPhrase(String phrase) {
         FlujoEntrada.phrase = phrase;
