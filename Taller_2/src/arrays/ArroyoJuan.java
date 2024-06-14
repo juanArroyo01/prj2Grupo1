@@ -3,8 +3,8 @@ package arrays;
 public class ArroyoJuan {
 
     /**
-     * Imprime el nombre y el apellido en una 
-     * figura equis. El usuario ingresa los 
+     * Imprime el nombre y el apellido en una
+     * figura equis. El usuario ingresa los
      * datos, nombre y apellido, y el metodo
      * analiza la longitud de la figura equis.
      * 
@@ -20,11 +20,11 @@ public class ArroyoJuan {
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
                 if (i == j && j < name.length())
-                    System.out.print(nameArray[j]);
-                else if ((j == (length - i) - 1) && (count >= 0))
-                    System.out.print(surnameArray[(surname.length() - 1) - count--]);
-                else
-                    System.out.print("   ");
+                    System.out.print(" " + nameArray[j] + "  ");
+                else if ((j == (length - i) - 1) && (count >= 0)) {
+                    System.out.print(" " + surnameArray[(surname.length() - 1) - count--] + "  ");
+                } else
+                    System.out.print("     ");
 
             }
             System.out.println();
