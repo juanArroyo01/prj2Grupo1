@@ -2,6 +2,19 @@ package cadenaCaracteres;
 
 public class ArroyoJuan {
 
+    /**
+     * Realiza el conteo de las vocales en
+     * una cadena de texto ingresado, se
+     * recepta la cadena de texto por parametro
+     * y se analiza sus datos.
+     * 
+     * En el caso que el usuario no ingresase una
+     * vocal, se retorna -1, caso contrario el valor
+     * de las vocales.
+     * 
+     * @param phrase
+     * @return
+     */
     public int jaC01(String phrase) {
         int count = 0;
         System.out.println("Frase: " + phrase);
@@ -17,6 +30,13 @@ public class ArroyoJuan {
         }
     }
 
+    /**
+     * Convierte de minuscula a mayuscula con la condicion 
+     * que la j y J desaparezca dentro de la cadena de texto.
+     * 
+     * @param phrase
+     * @return
+     */
     public String jaC07(String phrase) {
         int count = 0;
         char newPhrase[] = new char[phrase.length()];

@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 import Utils.exceptions.*;
 
-public class FlujoEntrada {
+public class KeyReader {
     static private Scanner keyboard = new Scanner(System.in);
     static private String phrase;
 
-    public FlujoEntrada() {
+    public KeyReader() {
         phrase = "";
     }
 
@@ -81,7 +81,7 @@ public class FlujoEntrada {
     }
 
     public static void setKeyboard(Scanner keyboard) {
-        FlujoEntrada.keyboard = keyboard;
+        KeyReader.keyboard = keyboard;
     }
 
     public static String getPhrase() {
@@ -89,7 +89,7 @@ public class FlujoEntrada {
     }
 
     public static void setPhrase(String phrase) {
-        FlujoEntrada.phrase = phrase;
+        KeyReader.phrase = phrase;
     }
 
 }
