@@ -6,7 +6,7 @@ public class YupanquiNiurkaC06 {
     public void serieCadenaCaracterC06(Scanner sc) {
         System.out.print("Ingrese una frase: ");
         String frase = sc.nextLine();
-        
+
         String fraseMayusculas = frase.toUpperCase();
         String fraseInvertida = "";
 

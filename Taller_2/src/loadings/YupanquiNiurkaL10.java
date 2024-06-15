@@ -1,4 +1,4 @@
-package seriesLoading;
+package loadings;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package seriesRecursividad;
+package recursividad;
 import java.util.Scanner;
 
 public class YupanquiNiurkaR04 {
