@@ -1,12 +1,13 @@
 package arrays;
-import java.util.Scanner;
+import Utils.DataReader.KeyReader;
+
 
 public class YupanquiNiurkaA03 {
 
-    public void SeriearrayA3(Scanner sc) {
+    public void SeriearrayA3() {
         System.out.println("Array 3: ");
         System.out.print("Ingrese su nombre: ");
-        String name = sc.next();
+        String name = KeyReader.cadenaFlujoEntrada();
 
         int size = name.length() * 2;
 

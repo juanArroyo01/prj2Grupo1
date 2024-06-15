@@ -3,7 +3,6 @@ import Utils.DataReader.KeyReader;
 import arrays.YupanquiNiurkaA03;
 import cadenaCaracteres.YupanquiNiurkaC06;
 import figuras.*;
-import java.util.Scanner;
 import serieCaracteres.*;
 import serieNumerica.*;
 import serieNumerica.ArroyoJuan;
@@ -15,7 +14,6 @@ import seriesRecursividad.YupanquiNiurkaR04.Recursion4;
 
 public class App {
         public static void main(String[] args) throws Exception {
-                Scanner sc = new Scanner(System.in);
                 // Objects
                 ArroyoJuan jaSn = new ArroyoJuan();
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
@@ -253,17 +251,14 @@ public class App {
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+                
 
-   
-                System.out.println("\nIngrese el tamaño: ");
-                 int size = sc.nextInt();
-                 sc.nextLine();  
-        
+                
                  System.out.println("\n Serie C06:");
-                 sc06.serieCadenaCaracterC06(sc); 
+                 sc06.serieCadenaCaracterC06(); 
         
                  System.out.println("\nSerie A03:");
-                 sa03.SeriearrayA3(sc); 
+                 sa03.SeriearrayA3(); 
 
                  System.out.println("\nSerie L04:");
                  sl04.SerieaLoadingL04();
