@@ -1,15 +1,19 @@
 
 import Utils.DataReader.KeyReader;
+import arrays.CasaFernandoAry;
 import arrays.YupanquiNiurkaA03;
+import cadenaCaracteres.CasaFernandoCar;
 import cadenaCaracteres.YupanquiNiurkaC06;
 import figuras.*;
+import loadings.CasaFernandoLo;
+import loadings.YupanquiNiurkaL04;
+import loadings.YupanquiNiurkaL10;
+import recursividad.CasaFernandoRe;
+import recursividad.YupanquiNiurkaR04;
+import recursividad.YupanquiNiurkaR04.Recursion4;
 import serieCaracteres.*;
 import serieNumerica.*;
 import serieNumerica.ArroyoJuan;
-import seriesLoading.YupanquiNiurkaL04;
-import seriesLoading.YupanquiNiurkaL10;
-import seriesRecursividad.YupanquiNiurkaR04;
-import seriesRecursividad.YupanquiNiurkaR04.Recursion4;
  
 
 public class App {
@@ -19,6 +23,9 @@ public class App {
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
                 figuras.ArroyoJuan jaf = new figuras.ArroyoJuan();
                 cadenaCaracteres.ArroyoJuan jacc = new cadenaCaracteres.ArroyoJuan();
+                arrays.ArroyoJuan jaa = new arrays.ArroyoJuan();
+                loadings.ArroyoJuan jal = new loadings.ArroyoJuan();
+                recursividad.ArroyoJuan jar = new recursividad.ArroyoJuan();
 
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
@@ -38,6 +45,10 @@ public class App {
                 CasaFernandoSn cssn = new CasaFernandoSn();
                 CasaFernandoSc cssc = new CasaFernandoSc();
                 CasaFernandoSf cssf = new CasaFernandoSf();
+                CasaFernandoCar ccsfca = new CasaFernandoCar();
+                CasaFernandoAry ccsfA =new CasaFernandoAry();
+                CasaFernandoLo csLo = new CasaFernandoLo();
+                CasaFernandoRe ccsRe =new CasaFernandoRe();
 
                 BenavidesJakeSn jbsn = new BenavidesJakeSn();
                 BenavidesJakeSc jbsc = new BenavidesJakeSc();
@@ -70,7 +81,7 @@ public class App {
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsn.jbSn2(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 3");
+                System.out.println("\n\nSerie 3");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsn.setSize(KeyReader.numeroFlujoEntrada());
                 acsn.caSn3();
@@ -83,7 +94,7 @@ public class App {
                 cmSn5.setSize(KeyReader.numeroFlujoEntrada());
                 cmSn5.mcSn();
 
-                System.out.println("\nSerie 6");
+                System.out.println("\n\nSerie 6");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 ynsn.ForynSn6(KeyReader.numeroFlujoEntrada());
 
@@ -96,12 +107,12 @@ public class App {
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsn.jbSn8(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 9");
+                System.out.println("\n\nSerie 9");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsn.setSize(KeyReader.numeroFlujoEntrada());
                 acsn.caSn9();
 
-                System.out.println("\nSerie 10");
+                System.out.println("\n\nSerie 10");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 cssn.csSn10(KeyReader.numeroFlujoEntrada());
 
@@ -122,11 +133,11 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 jbsc.jbSc2(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 3");
+                System.out.println("\n\nSerie 3");
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 acsc.caSc3(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("Serie 4");
+                System.out.println("\nSerie 4");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 cssc.csSc4(KeyReader.caracterFlujoEntrada(), KeyReader.numeroFlujoEntrada());
 
@@ -135,20 +146,20 @@ public class App {
                 mcsc.mcSc5();
 
                 System.out.println("\nSerie 6");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 ynsc.ForynSc6(KeyReader.numeroFlujoEntrada());
 
                 System.out.println("\nSerie 7");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jaSc.setSize(KeyReader.numeroFlujoEntrada());
                 jaSc.jaSc7();
 
                 System.out.println("\nSerie 8");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsc.jbSc8(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 9");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\n\nSerie 9");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsc.caSc9(KeyReader.numeroFlujoEntrada());
 
                 // ------------------------------------------------------------------------
@@ -233,7 +244,7 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 ynsf.ForynSf19(KeyReader.numeroFlujoEntrada());
 
-                // ------------------------------------------------------------------------
+
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -246,11 +257,51 @@ public class App {
                         System.out.println("Salida: tiene " + aux + " vocales.");
                 else
                         System.out.println("Salida: tiene " + 0 + " vocales.");
+                
+                System.out.println("\nCadena4"); 
+                ccsfca.scC04();
 
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+
+                System.out.println("\n----------------------------------------------------------\n");
+
+                System.out.println("\nCadena de Arrays:");
+                System.out.println("\nArrays 1");
+                ccsfA.csA01();
+
+                System.out.println("\nArrays 4");
+                System.out.println("\nIngrese nombre y apellido.");
+                jaa.jaA04(KeyReader.cadenaFlujoEntrada(), KeyReader.cadenaFlujoEntrada());
+
+                System.out.println("\n----------------------------------------------------------\n");
+
+                System.out.println("\nLoading:");
+
+                System.out.println("\nLoading 2");
+                csLo.scLo2();
+
+                System.out.println("\nLoading 5");
+                jal.jaL05();
+
+                System.out.println("\nLoading 8");
+                csLo.scLo8();
+
+                System.out.println("\nLoading 11");
+                jal.jaL11();
+
+                System.out.println("\n----------------------------------------------------------\n");
+
+                System.out.println("\nRecursividad:");
+                
+                System.out.println("\nRecursividad 2.- Suma recursiva");
+                ccsRe.scR02();
+                
+                System.out.println("\nRecursividad 5.- Conteo progresivo");
+                System.out.println("Ingrese el numero límite.");
+                jar.jaR05(KeyReader.numeroFlujoEntrada());
                 
 
                 
