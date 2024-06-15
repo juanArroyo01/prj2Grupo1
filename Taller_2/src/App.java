@@ -1,13 +1,21 @@
 
 import Utils.DataReader.KeyReader;
+import arrays.YupanquiNiurkaA03;
+import cadenaCaracteres.YupanquiNiurkaC06;
 import figuras.*;
+import java.util.Scanner;
 import serieCaracteres.*;
-import serieNumerica.ArroyoJuan;
 import serieNumerica.*;
+import serieNumerica.ArroyoJuan;
+import seriesLoading.YupanquiNiurkaL04;
+import seriesLoading.YupanquiNiurkaL10;
+import seriesRecursividad.YupanquiNiurkaR04;
+import seriesRecursividad.YupanquiNiurkaR04.Recursion4;
+ 
 
 public class App {
         public static void main(String[] args) throws Exception {
-
+                Scanner sc = new Scanner(System.in);
                 // Objects
                 ArroyoJuan jaSn = new ArroyoJuan();
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
@@ -18,6 +26,13 @@ public class App {
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
 
+
+                YupanquiNiurkaC06 sc06 = new YupanquiNiurkaC06();
+                YupanquiNiurkaA03 sa03 = new YupanquiNiurkaA03();
+                YupanquiNiurkaL04 sl04 = new YupanquiNiurkaL04();
+                YupanquiNiurkaL10 sl10 = new YupanquiNiurkaL10();
+                YupanquiNiurkaR04 sr04 = new YupanquiNiurkaR04(); 
+ 
                 YupanquiNiurkaSn ynsn = new YupanquiNiurkaSn();
                 YupanquiNiurkaSc ynsc = new YupanquiNiurkaSc();
                 YupanquiNiurkaSf ynsf = new YupanquiNiurkaSf();
@@ -238,6 +253,28 @@ public class App {
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+
+   
+                System.out.println("\nIngrese el tamaño: ");
+                 int size = sc.nextInt();
+                 sc.nextLine();  
+        
+                 System.out.println("\n Serie C06:");
+                 sc06.serieCadenaCaracterC06(sc); 
+        
+                 System.out.println("\nSerie A03:");
+                 sa03.SeriearrayA3(sc); 
+
+                 System.out.println("\nSerie L04:");
+                 sl04.SerieaLoadingL04();
+
+                 System.out.println("\nSerie L10:");
+                 sl10.SerieaLoadingL10();
+
+                 System.out.println("\nSerie R04:");
+                 Recursion4 recursionInstance = sr04.new Recursion4();
+                 recursionInstance.SerieRecursividadR04(); 
+                 
         }
 
 }
