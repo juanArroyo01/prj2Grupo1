@@ -11,5 +11,7 @@ replay_pid*
 
 MainJuan.java
 *.txt
+MainNiurka.java
+*.txt
 
 Taller_2/src/test/Main.java
