@@ -13,6 +13,8 @@ public class App {
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
                 figuras.ArroyoJuan jaf = new figuras.ArroyoJuan();
                 cadenaCaracteres.ArroyoJuan jacc = new cadenaCaracteres.ArroyoJuan();
+                arrays.ArroyoJuan jaa = new arrays.ArroyoJuan();
+                loadings.ArroyoJuan jal = new loadings.ArroyoJuan();
 
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
