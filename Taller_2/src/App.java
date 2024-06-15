@@ -19,6 +19,7 @@ public class App {
                 cadenaCaracteres.ArroyoJuan jacc = new cadenaCaracteres.ArroyoJuan();
                 arrays.ArroyoJuan jaa = new arrays.ArroyoJuan();
                 loadings.ArroyoJuan jal = new loadings.ArroyoJuan();
+                recursividad.ArroyoJuan jar = new recursividad.ArroyoJuan();
 
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
@@ -35,12 +36,6 @@ public class App {
                 CasaFernandoAry ccsfA =new CasaFernandoAry();
                 CasaFernandoLo csLo = new CasaFernandoLo();
                 CasaFernandoRe ccsRe =new CasaFernandoRe();
-                
-                
-
-             
-
-                
 
                 BenavidesJakeSn jbsn = new BenavidesJakeSn();
                 BenavidesJakeSc jbsc = new BenavidesJakeSc();
@@ -277,16 +272,23 @@ public class App {
 
                 System.out.println("\nLoading 5");
                 jal.jaL05();
+
                 System.out.println("\nLoading 8");
-                csLo.scLo8();;
+                csLo.scLo8();
+
                 System.out.println("\nLoading 11");
                 jal.jaL11();
 
                 System.out.println("\n----------------------------------------------------------\n");
+
                 System.out.println("\nRecursividad:");
+                
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
-
+                
+                System.out.println("\nRecursividad 2.- Suma recursiva");
+                System.out.println("Ingrese el numero límite.");
+                jar.jaR05(KeyReader.numeroFlujoEntrada());
         }
 
 }
