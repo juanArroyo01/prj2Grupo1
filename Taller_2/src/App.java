@@ -68,7 +68,7 @@ public class App {
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsn.jbSn2(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 3");
+                System.out.println("\n\nSerie 3");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsn.setSize(KeyReader.numeroFlujoEntrada());
                 acsn.caSn3();
@@ -81,7 +81,7 @@ public class App {
                 cmSn5.setSize(KeyReader.numeroFlujoEntrada());
                 cmSn5.mcSn();
 
-                System.out.println("\nSerie 6");
+                System.out.println("\n\nSerie 6");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 ynsn.ForynSn6(KeyReader.numeroFlujoEntrada());
 
@@ -94,12 +94,12 @@ public class App {
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsn.jbSn8(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 9");
+                System.out.println("\n\nSerie 9");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsn.setSize(KeyReader.numeroFlujoEntrada());
                 acsn.caSn9();
 
-                System.out.println("\nSerie 10");
+                System.out.println("\n\nSerie 10");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 cssn.csSn10(KeyReader.numeroFlujoEntrada());
 
@@ -120,11 +120,11 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 jbsc.jbSc2(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 3");
+                System.out.println("\n\nSerie 3");
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 acsc.caSc3(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("Serie 4");
+                System.out.println("\nSerie 4");
                 System.out.println("\nIngrese el tamaño que desee de la serie.");
                 cssc.csSc4(KeyReader.caracterFlujoEntrada(), KeyReader.numeroFlujoEntrada());
 
@@ -133,20 +133,20 @@ public class App {
                 mcsc.mcSc5();
 
                 System.out.println("\nSerie 6");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 ynsc.ForynSc6(KeyReader.numeroFlujoEntrada());
 
                 System.out.println("\nSerie 7");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jaSc.setSize(KeyReader.numeroFlujoEntrada());
                 jaSc.jaSc7();
 
                 System.out.println("\nSerie 8");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 jbsc.jbSc8(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("\nSerie 9");
-                System.out.println("\n\nIngrese el tamaño que desee de la serie.");
+                System.out.println("\n\nSerie 9");
+                System.out.println("\nIngrese el tamaño que desee de la serie.");
                 acsc.caSc9(KeyReader.numeroFlujoEntrada());
 
                 // ------------------------------------------------------------------------
@@ -286,7 +286,7 @@ public class App {
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
                 
-                System.out.println("\nRecursividad 2.- Suma recursiva");
+                System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
         }

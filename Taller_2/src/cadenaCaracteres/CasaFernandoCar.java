@@ -12,7 +12,7 @@ public class CasaFernandoCar {
 
         String frase = " Frase  " ;
          char letra ;
-        System.out.print("\n Igrese su frace  ");
+        System.out.print("\n Igrese su frase  ");
         frase = KeyReader.cadenaFlujoEntrada();
         System.out.println("su Frase es " + frase);
         letra = KeyReader.caracterFlujoEntrada();
