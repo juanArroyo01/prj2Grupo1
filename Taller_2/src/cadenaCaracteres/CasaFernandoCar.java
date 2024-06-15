@@ -3,14 +3,18 @@ package cadenaCaracteres;
 import Utils.DataReader.KeyReader;
 
 public class CasaFernandoCar {
+    /**
+     * permite ingresa una frase y una letra 
+     * para luego devolver la frase pero con la letra 
+     * ingresada eliminada 
+     */
     public void scC04() {
 
         String frase = " Frase  " ;
          char letra ;
-        System.out.print("\n Igrese su frace  --> ");
+        System.out.print("\n Igrese su frace  ");
         frase = KeyReader.cadenaFlujoEntrada();
         System.out.println("su Frase es " + frase);
-        System.out.print("\n Igrese  una letra --> ");
         letra = KeyReader.caracterFlujoEntrada();
         System.out.println("su letra es " + letra);
 

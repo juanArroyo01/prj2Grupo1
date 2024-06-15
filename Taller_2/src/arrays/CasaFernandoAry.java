@@ -3,6 +3,10 @@ package arrays ;
 import Utils.DataReader.KeyReader;
 
 public class CasaFernandoAry {
+    /**
+     * Crea una array para cada palabra de su nombre y
+     *  permite ingresar el porcentaje de carga para cada palabra.
+     */
     public void csA01() {
         System.out.print("\n Ingrese su nombre:");
         String nombre = KeyReader.cadenaFlujoEntrada();

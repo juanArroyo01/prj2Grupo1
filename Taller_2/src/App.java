@@ -1,6 +1,10 @@
 
 import Utils.DataReader.KeyReader;
+import arrays.CasaFernandoAry;
+import cadenaCaracteres.CasaFernandoCar;
 import figuras.*;
+import loadings.CasaFernandoLo;
+import recursividad.CasaFernandoRe;
 import serieCaracteres.*;
 import serieNumerica.ArroyoJuan;
 import serieNumerica.*;
@@ -27,6 +31,16 @@ public class App {
                 CasaFernandoSn cssn = new CasaFernandoSn();
                 CasaFernandoSc cssc = new CasaFernandoSc();
                 CasaFernandoSf cssf = new CasaFernandoSf();
+                CasaFernandoCar ccsfca = new CasaFernandoCar();
+                CasaFernandoAry ccsfA =new CasaFernandoAry();
+                CasaFernandoLo csLo = new CasaFernandoLo();
+                CasaFernandoRe ccsRe =new CasaFernandoRe();
+                
+                
+
+             
+
+                
 
                 BenavidesJakeSn jbsn = new BenavidesJakeSn();
                 BenavidesJakeSc jbsc = new BenavidesJakeSc();
@@ -220,12 +234,10 @@ public class App {
 
                 System.out.println("\nFigura 19");
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
-                ynsf.ForynSf19(fEntrada.numeroFlujoEntrada());
+                ynsf.ForynSf19(KeyReader.numeroFlujoEntrada());
 
-                System.out.println("TEST");
 
-<<<<<<< HEAD
-=======
+
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nCadena de caracteres:");
@@ -237,6 +249,9 @@ public class App {
                         System.out.println("Salida: tiene " + aux + " vocales.");
                 else
                         System.out.println("Salida: tiene " + 0 + " vocales.");
+                
+                System.out.println("\nCadena4"); 
+                ccsfca.scC04();
 
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
@@ -246,6 +261,8 @@ public class App {
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nCadena de Arrays:");
+                System.out.println("\nArrays 1");
+                ccsfA.csA01();
 
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
@@ -255,12 +272,21 @@ public class App {
 
                 System.out.println("\nLoading:");
 
+                System.out.println("\nLoading 2");
+                csLo.scLo2();
+
                 System.out.println("\nLoading 5");
                 jal.jaL05();
-                
+                System.out.println("\nLoading 8");
+                csLo.scLo8();;
                 System.out.println("\nLoading 11");
                 jal.jaL11();
->>>>>>> f37b09a97935ae58f1bf96517f85efbf4995fef7
+
+                System.out.println("\n----------------------------------------------------------\n");
+                System.out.println("\nRecursividad:");
+                System.out.println("\nRecursividad 2.- Suma recursiva");
+                ccsRe.scR02();
+
         }
 
 }
