@@ -240,6 +240,24 @@ public class App {
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+
+                System.out.println("\n----------------------------------------------------------\n");
+
+                System.out.println("\nCadena de Arrays:");
+
+                System.out.println("\nArrays 4");
+                System.out.println("\nIngrese nombre y apellido.");
+                jaa.jaA04(KeyReader.cadenaFlujoEntrada(), KeyReader.cadenaFlujoEntrada());
+
+                System.out.println("\n----------------------------------------------------------\n");
+
+                System.out.println("\nLoading:");
+
+                System.out.println("\nLoading 5");
+                jal.jaL05();
+                
+                System.out.println("\nLoading 11");
+                jal.jaL11();
         }
 
 }
