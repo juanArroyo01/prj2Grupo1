@@ -31,7 +31,7 @@ public class ArroyoJuan {
     }
 
     /**
-     * Convierte de minuscula a mayuscula con la condicion 
+     * Convierte de minuscula a mayuscula con la condicion
      * que la j y J desaparezca dentro de la cadena de texto.
      * 
      * @param phrase
