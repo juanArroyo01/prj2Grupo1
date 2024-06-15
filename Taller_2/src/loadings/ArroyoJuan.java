@@ -18,6 +18,12 @@ public class ArroyoJuan {
 
     final String[] colorArray = { RESET, GREEN, YELLOW, BLUE, PURPLE, CYAN, WHITE };
 
+    /**
+     * Utiliza el array de colores para definir
+     * aleatoriamente un color y utilizarlo 
+     * donde se defina.
+     * @return
+     */
     private String getColor() {
         return colorArray[new Random().nextInt(colorArray.length)];
     }
@@ -44,6 +50,15 @@ public class ArroyoJuan {
         }
     }
 
+    /**
+     * Realiza una impresion de una señal grafica, 
+     * solicita al usuario el nivel entre 0-50 y 
+     * y el programa genera distintas señales 
+     * aleatorias. Generando asi señales de 
+     * distintos colores usando el metodo 
+     * getColor();
+     * 
+     */
     public void jaL11() {
         int level, maxLenght = 0, spaceLength;
         level = askLevel();
@@ -61,9 +76,14 @@ public class ArroyoJuan {
         }
 
         System.out.println();
-
     }
 
+    /**
+     * Solicita al usuario que ingrese el nivel 
+     * que el usuario desee realizar.
+     * 
+     * @return
+     */
     private Integer askLevel() {
         int level;
         do {
