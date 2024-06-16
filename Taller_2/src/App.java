@@ -1,9 +1,14 @@
 
+import java.security.Key;
 import Utils.DataReader.KeyReader;
+import arrays.BenavidesJakeAr;
 import arrays.CasaFernandoAry;
+import cadenaCaracteres.BenavidesJakeCar;
 import cadenaCaracteres.CasaFernandoCar;
 import figuras.*;
+import loadings.BenavidesJakeLo;
 import loadings.CasaFernandoLo;
+import recursividad.BenavidesJakeRe;
 import recursividad.CasaFernandoRe;
 import serieCaracteres.*;
 import serieNumerica.ArroyoJuan;
@@ -40,6 +45,12 @@ public class App {
                 BenavidesJakeSn jbsn = new BenavidesJakeSn();
                 BenavidesJakeSc jbsc = new BenavidesJakeSc();
                 BenavidesJakeSf jbsf = new BenavidesJakeSf();
+                BenavidesJakeAr jbAr = new BenavidesJakeAr();
+                BenavidesJakeCar jbcar = new BenavidesJakeCar();
+                BenavidesJakeLo jbLo = new BenavidesJakeLo();
+                BenavidesJakeRe jbRe = new BenavidesJakeRe();
+                
+                
 
                 CasaAntonelasn acsn = new CasaAntonelasn();
                 CasaAntonelasc acsc = new CasaAntonelasc();
@@ -244,7 +255,8 @@ public class App {
                         System.out.println("Salida: tiene " + aux + " vocales.");
                 else
                         System.out.println("Salida: tiene " + 0 + " vocales.");
-                
+                System.out.println("\nCadena 2");
+                jbcar.jbC02();
                 System.out.println("\nCadena4"); 
                 ccsfca.scC04();
 
@@ -252,6 +264,8 @@ public class App {
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+                System.out.println("\nCadena 8");
+                jbcar.jbC08();
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -262,6 +276,11 @@ public class App {
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
                 jaa.jaA04(KeyReader.cadenaFlujoEntrada(), KeyReader.cadenaFlujoEntrada());
+                
+                System.out.println("\nArrays 5");
+                System.out.println("Ingrese sus nombre o apellidos");
+                jbAr.jbA05(KeyReader.cadenaFlujoEntrada());
+
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -273,11 +292,17 @@ public class App {
                 System.out.println("\nLoading 5");
                 jal.jaL05();
 
+                System.out.println("nLoading 6");
+                jbLo.jbL06();
+
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
 
                 System.out.println("\nLoading 11");
                 jal.jaL11();
+
+                System.out.println("\nLoading 12");
+                jbLo.jbL12(KeyReader.numeroFlujoEntrada());
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -289,6 +314,9 @@ public class App {
                 System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
+
+                System.out.println("\nRecursividad 6.- Conteo regresivo");
+                jbRe.jbR06(KeyReader.numeroFlujoEntrada());
         }
 
 }
