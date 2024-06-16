@@ -1,17 +1,23 @@
 
 import Utils.DataReader.KeyReader;
 import arrays.CasaFernandoAry;
+import arrays.YupanquiNiurkaA03;
 import cadenaCaracteres.CasaFernandoCar;
+import cadenaCaracteres.YupanquiNiurkaC06;
 import figuras.*;
 import loadings.CasaFernandoLo;
+import loadings.YupanquiNiurkaL04;
+import loadings.YupanquiNiurkaL10;
 import recursividad.CasaFernandoRe;
+import recursividad.YupanquiNiurkaR04;
+import recursividad.YupanquiNiurkaR04.Recursion4;
 import serieCaracteres.*;
-import serieNumerica.ArroyoJuan;
 import serieNumerica.*;
+import serieNumerica.ArroyoJuan;
+ 
 
 public class App {
         public static void main(String[] args) throws Exception {
-
                 // Objects
                 ArroyoJuan jaSn = new ArroyoJuan();
                 serieCaracteres.ArroyoJuan jaSc = new serieCaracteres.ArroyoJuan();
@@ -25,6 +31,13 @@ public class App {
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
 
+
+                YupanquiNiurkaC06 sc06 = new YupanquiNiurkaC06();
+                YupanquiNiurkaA03 sa03 = new YupanquiNiurkaA03();
+                YupanquiNiurkaL04 sl04 = new YupanquiNiurkaL04();
+                YupanquiNiurkaL10 sl10 = new YupanquiNiurkaL10();
+                YupanquiNiurkaR04 sr04 = new YupanquiNiurkaR04(); 
+ 
                 YupanquiNiurkaSn ynsn = new YupanquiNiurkaSn();
                 YupanquiNiurkaSc ynsc = new YupanquiNiurkaSc();
                 YupanquiNiurkaSf ynsf = new YupanquiNiurkaSf();
@@ -248,6 +261,9 @@ public class App {
                 System.out.println("\nCadena4"); 
                 ccsfca.scC04();
 
+                System.out.println("\nCadena 6");
+                sc06.serieCadenaCaracterC06(); 
+
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
@@ -258,6 +274,9 @@ public class App {
                 System.out.println("\nCadena de Arrays:");
                 System.out.println("\nArrays 1");
                 ccsfA.csA01();
+
+                System.out.println("\nArrays 3");
+                sa03.SeriearrayA3(); 
 
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
@@ -270,11 +289,17 @@ public class App {
                 System.out.println("\nLoading 2");
                 csLo.scLo2();
 
+                System.out.println("\nLoading 4");
+                sl04.SerieaLoadingL04();
+
                 System.out.println("\nLoading 5");
                 jal.jaL05();
 
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
+
+                System.out.println("\nLoading 10");
+                sl10.SerieaLoadingL10();
 
                 System.out.println("\nLoading 11");
                 jal.jaL11();
@@ -286,9 +311,17 @@ public class App {
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
                 
+                System.out.println("\nRecursividad 4.-Calcular la potencia de (a,b)");
+                Recursion4 recursionInstance = sr04.new Recursion4();
+                recursionInstance.SerieRecursividadR04(); 
+
                 System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
+                
+
+                 
+                 
         }
 
 }
