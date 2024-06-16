@@ -1,8 +1,7 @@
 package Utils.DataReader;
 
-import java.util.Scanner;
-
 import Utils.exceptions.*;
+import java.util.Scanner;
 
 public class KeyReader {
     static private Scanner keyboard = new Scanner(System.in);
