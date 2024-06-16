@@ -1,25 +1,25 @@
-package arrays ;
+package arrays;
 
 import Utils.DataReader.KeyReader;
 
 public class CasaFernandoAry {
     /**
      * Crea una array para cada palabra de su nombre y
-     *  permite ingresar el porcentaje de carga para cada palabra.
+     * permite ingresar el porcentaje de carga para cada palabra.
      */
     public void csA01() {
         System.out.print("\n Ingrese su nombre:");
         String nombre = KeyReader.cadenaFlujoEntrada();
-        System.out.print("\n Ingrese el porcentaje de carga para cada palabra:");
+        System.out.print("\n Ingrese el porcentaje de carga para cada palabra: ");
         String[] porString = KeyReader.getKeyboard().nextLine().split(" ");
         int[] porcentajes = new int[porString.length];
-    
+
         for (int i = 0; i < porString.length; i++) {
-            porcentajes[i] = Integer.parseInt(porString[i]);
+            porcentajes[i] = porString[i].length();
         }
-    
+
         String[] palabras = nombre.split(" ");
-    
+
         for (int i = 0; i < palabras.length; i++) {
             int carga = porcentajes[i];
             StringBuilder barraCarga = new StringBuilder("[");
@@ -27,7 +27,7 @@ public class CasaFernandoAry {
             for (int j = 0; j < llenado; j++) {
                 barraCarga.append("=");
             }
-            barraCarga.append(">"); 
+            barraCarga.append(">");
             for (int j = llenado; j < 10; j++) {
                 barraCarga.append(" ");
             }
@@ -36,5 +36,5 @@ public class CasaFernandoAry {
         }
         System.out.println();
     }
-    
+
 }

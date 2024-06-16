@@ -1,7 +1,8 @@
 package Utils.DataReader;
 
-import Utils.exceptions.*;
 import java.util.Scanner;
+
+import Utils.exceptions.*;
 
 public class KeyReader {
     static private Scanner keyboard = new Scanner(System.in);
@@ -13,7 +14,7 @@ public class KeyReader {
 
     public static String cadenaFlujoEntrada() {
         System.out.print("-> ");
-        setPhrase(keyboard.nextLine());
+        phrase = keyboard.nextLine();
         if (getPhrase() != null && !getPhrase().isEmpty() && !getPhrase().isBlank()) {
             return phrase;
         } else {
