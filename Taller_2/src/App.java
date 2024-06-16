@@ -24,6 +24,10 @@ public class App {
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
+                cadenaCaracteres.ChimarroMarlon mccc = new cadenaCaracteres.ChimarroMarlon();
+                arrays.ChimarroMarlon mca = new arrays.ChimarroMarlon();
+                loadings.ChimarroMarlon mcl = new loadings.ChimarroMarlon();
+                recursividad.ChimarroMarlon mcr = new recursividad.ChimarroMarlon();
 
                 YupanquiNiurkaSn ynsn = new YupanquiNiurkaSn();
                 YupanquiNiurkaSc ynsc = new YupanquiNiurkaSc();
@@ -248,6 +252,11 @@ public class App {
                 System.out.println("\nCadena4"); 
                 ccsfca.scC04();
 
+                System.out.println("\nCadena 5");
+                System.out.println("\nIngrese la frase a invertir");
+                mccc.cmcc05(KeyReader.cadenaFlujoEntrada());
+                
+
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
@@ -258,6 +267,9 @@ public class App {
                 System.out.println("\nCadena de Arrays:");
                 System.out.println("\nArrays 1");
                 ccsfA.csA01();
+
+                System.out.println("\nArrays 2");
+                mca.cma02(KeyReader.numeroFlujoEntrada(), KeyReader.caracterFlujoEntrada());
 
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
@@ -270,11 +282,18 @@ public class App {
                 System.out.println("\nLoading 2");
                 csLo.scLo2();
 
+                System.out.println("\nLoading 3");
+                mcl.cml03(KeyReader.caracterFlujoEntrada());
+
+
                 System.out.println("\nLoading 5");
                 jal.jaL05();
 
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
+
+                System.out.println("\nLoading 9");
+                mcl.cml09(KeyReader.cadenaFlujoEntrada());
 
                 System.out.println("\nLoading 11");
                 jal.jaL11();
@@ -285,7 +304,12 @@ public class App {
                 
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
-                
+
+                System.out.println("\nRecursividad 3.- Multiplicacion recursiva");
+                mcr.cmmr(KeyReader.numeroFlujoEntrada(), KeyReader.numeroFlujoEntrada());
+                System.out.println("\n");
+
+
                 System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
