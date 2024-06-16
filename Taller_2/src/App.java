@@ -33,6 +33,10 @@ public class App {
                 serieNumerica.ChimarroMarlon cmSn5 = new serieNumerica.ChimarroMarlon();
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
+                cadenaCaracteres.ChimarroMarlon mccc = new cadenaCaracteres.ChimarroMarlon();
+                arrays.ChimarroMarlon mca = new arrays.ChimarroMarlon();
+                loadings.ChimarroMarlon mcl = new loadings.ChimarroMarlon();
+                recursividad.ChimarroMarlon mcr = new recursividad.ChimarroMarlon();
 
                 YupanquiNiurkaC06 sc06 = new YupanquiNiurkaC06();
                 YupanquiNiurkaA03 sa03 = new YupanquiNiurkaA03();
@@ -60,8 +64,6 @@ public class App {
                 BenavidesJakeLo jbLo = new BenavidesJakeLo();
                 BenavidesJakeRe jbRe = new BenavidesJakeRe();
                 
-                
-
                 CasaAntonelasn acsn = new CasaAntonelasn();
                 CasaAntonelasc acsc = new CasaAntonelasc();
                 CasaAntonelafig acfig = new CasaAntonelafig();
@@ -276,13 +278,21 @@ public class App {
                 System.out.println("\nCadena4"); 
                 ccsfca.scC04();
 
+
+                System.out.println("\nCadena 5");
+                System.out.println("\nIngrese la frase a invertir");
+                mccc.cmcc05(KeyReader.cadenaFlujoEntrada());
+                
+
                 System.out.println("\nCadena 6");
                 sc06.serieCadenaCaracterC06();
+
 
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+          
                 System.out.println("\nCadena 8");
                 jbcar.jbC08();
 
@@ -296,8 +306,13 @@ public class App {
                 System.out.println("\nArrays 1");
                 ccsfA.csA01();
 
+
+                System.out.println("\nArrays 2");
+                mca.cma02(KeyReader.numeroFlujoEntrada(), KeyReader.caracterFlujoEntrada());
+
                 System.out.println("\nArrays 3");
                 sa03.SeriearrayA3();
+
 
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
@@ -318,6 +333,9 @@ public class App {
                 System.out.println("\nLoading 2");
                 csLo.scLo2();
 
+                System.out.println("\nLoading 3");
+                mcl.cml03(KeyReader.caracterFlujoEntrada());
+
                 System.out.println("\nLoading 4");
                 sl04.SerieaLoadingL04();
 
@@ -334,6 +352,9 @@ public class App {
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
 
+                System.out.println("\nLoading 9");
+                mcl.cml09(KeyReader.cadenaFlujoEntrada());
+          
                 System.out.println("\nLoading 10");
                 sl10.SerieaLoadingL10();
 
@@ -353,6 +374,10 @@ public class App {
 
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
+
+                System.out.println("\nRecursividad 3.- Multiplicacion recursiva");
+                mcr.cmmr(KeyReader.numeroFlujoEntrada(), KeyReader.numeroFlujoEntrada());
+                System.out.println("\n");
 
                 System.out.println("\nRecursividad 4.-Calcular la potencia de (a,b)");
                 sr04.SerieRecursividadR04();
