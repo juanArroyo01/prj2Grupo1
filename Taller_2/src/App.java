@@ -54,6 +54,9 @@ public class App {
                 CasaAntonelasn acsn = new CasaAntonelasn();
                 CasaAntonelasc acsc = new CasaAntonelasc();
                 CasaAntonelafig acfig = new CasaAntonelafig();
+                cadenaCaracteres.CasaAntonela acCc= new cadenaCaracteres.CasaAntonela();
+                recursividad.CasaAntonela acr= new recursividad.CasaAntonela();
+                loadings.CasaAntonela aclg = new loadings.CasaAntonela();
 
                 // Variable
                 int aux;
@@ -254,6 +257,12 @@ public class App {
                         System.out.println("Salida: tiene " + 0 + " vocales.");
 
                 System.out.println("\nCadena4");
+
+                System.out.println("\nCadena 3");
+                acCc.Cadenacaracteres03Ac();
+
+
+                System.out.println("\nCadena4"); 
                 ccsfca.scC04();
 
                 System.out.println("\nCadena 6");
@@ -263,6 +272,10 @@ public class App {
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
+
+                System.out.println("\nCadena 9");
+                acCc.Cadenacaracteres09Ac();
+
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -281,6 +294,9 @@ public class App {
 
                 System.out.println("\nLoading:");
 
+                System.out.println("\nLoading 1");
+                aclg.Loading01Ac();
+
                 System.out.println("\nLoading 2");
                 csLo.scLo2();
 
@@ -289,6 +305,9 @@ public class App {
 
                 System.out.println("\nLoading 5");
                 jal.jaL05();
+
+                System.out.println("\nLoading 7");
+                aclg.Loading07Ac();
 
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
@@ -302,6 +321,10 @@ public class App {
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nRecursividad:");
+
+
+                System.out.println("\nRecursividad 1.- Factorial");
+                acr.Recursividad01Ac();
 
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();

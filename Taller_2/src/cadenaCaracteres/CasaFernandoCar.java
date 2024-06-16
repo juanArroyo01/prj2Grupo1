@@ -11,7 +11,7 @@ public class CasaFernandoCar {
     public void scC04() {
 
         String frase = " Frase  " ;
-         char letra ;
+        char letra ;
         System.out.print("\n Igrese su frase  ");
         frase = KeyReader.cadenaFlujoEntrada();
         System.out.println("su Frase es " + frase);

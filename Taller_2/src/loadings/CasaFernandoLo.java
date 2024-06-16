@@ -18,7 +18,6 @@ public class CasaFernandoLo {
             try {
                 Thread.sleep(150);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -49,7 +48,6 @@ public class CasaFernandoLo {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } // Pausa para simular la carga
         }
