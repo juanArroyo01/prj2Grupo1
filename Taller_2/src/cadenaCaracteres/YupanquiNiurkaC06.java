@@ -1,11 +1,11 @@
 package cadenaCaracteres;
 
-import java.util.Scanner;
+import Utils.DataReader.KeyReader;
 
 public class YupanquiNiurkaC06 {
-    public void serieCadenaCaracterC06(Scanner sc) {
+    public void serieCadenaCaracterC06() {
         System.out.print("Ingrese una frase: ");
-        String frase = sc.nextLine();
+        String frase = KeyReader.cadenaFlujoEntrada();
 
         String fraseMayusculas = frase.toUpperCase();
         String fraseInvertida = "";
