@@ -10,11 +10,9 @@ import loadings.YupanquiNiurkaL04;
 import loadings.YupanquiNiurkaL10;
 import recursividad.CasaFernandoRe;
 import recursividad.YupanquiNiurkaR04;
-import recursividad.YupanquiNiurkaR04.Recursion4;
 import serieCaracteres.*;
 import serieNumerica.*;
 import serieNumerica.ArroyoJuan;
- 
 
 public class App {
         public static void main(String[] args) throws Exception {
@@ -31,13 +29,12 @@ public class App {
                 serieCaracteres.ChimarroMarlon mcsc = new serieCaracteres.ChimarroMarlon();
                 figuras.ChimarroMarlon mcf = new figuras.ChimarroMarlon();
 
-
                 YupanquiNiurkaC06 sc06 = new YupanquiNiurkaC06();
                 YupanquiNiurkaA03 sa03 = new YupanquiNiurkaA03();
                 YupanquiNiurkaL04 sl04 = new YupanquiNiurkaL04();
                 YupanquiNiurkaL10 sl10 = new YupanquiNiurkaL10();
-                YupanquiNiurkaR04 sr04 = new YupanquiNiurkaR04(); 
- 
+                YupanquiNiurkaR04 sr04 = new YupanquiNiurkaR04();
+
                 YupanquiNiurkaSn ynsn = new YupanquiNiurkaSn();
                 YupanquiNiurkaSc ynsc = new YupanquiNiurkaSc();
                 YupanquiNiurkaSf ynsf = new YupanquiNiurkaSf();
@@ -46,9 +43,9 @@ public class App {
                 CasaFernandoSc cssc = new CasaFernandoSc();
                 CasaFernandoSf cssf = new CasaFernandoSf();
                 CasaFernandoCar ccsfca = new CasaFernandoCar();
-                CasaFernandoAry ccsfA =new CasaFernandoAry();
+                CasaFernandoAry ccsfA = new CasaFernandoAry();
                 CasaFernandoLo csLo = new CasaFernandoLo();
-                CasaFernandoRe ccsRe =new CasaFernandoRe();
+                CasaFernandoRe ccsRe = new CasaFernandoRe();
 
                 BenavidesJakeSn jbsn = new BenavidesJakeSn();
                 BenavidesJakeSc jbsc = new BenavidesJakeSc();
@@ -244,8 +241,6 @@ public class App {
                 System.out.println("\n\nIngrese el tamaño que desee de la serie.");
                 ynsf.ForynSf19(KeyReader.numeroFlujoEntrada());
 
-
-
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nCadena de caracteres:");
@@ -257,12 +252,12 @@ public class App {
                         System.out.println("Salida: tiene " + aux + " vocales.");
                 else
                         System.out.println("Salida: tiene " + 0 + " vocales.");
-                
-                System.out.println("\nCadena4"); 
+
+                System.out.println("\nCadena4");
                 ccsfca.scC04();
 
                 System.out.println("\nCadena 6");
-                sc06.serieCadenaCaracterC06(); 
+                sc06.serieCadenaCaracterC06();
 
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
@@ -276,7 +271,7 @@ public class App {
                 ccsfA.csA01();
 
                 System.out.println("\nArrays 3");
-                sa03.SeriearrayA3(); 
+                sa03.SeriearrayA3();
 
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
@@ -307,21 +302,17 @@ public class App {
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nRecursividad:");
-                
+
                 System.out.println("\nRecursividad 2.- Suma recursiva");
                 ccsRe.scR02();
-                
+
                 System.out.println("\nRecursividad 4.-Calcular la potencia de (a,b)");
-                Recursion4 recursionInstance = sr04.new Recursion4();
-                recursionInstance.SerieRecursividadR04(); 
+                sr04.SerieRecursividadR04();
 
                 System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
-                
 
-                 
-                 
         }
 
 }
