@@ -20,8 +20,9 @@ public class ArroyoJuan {
 
     /**
      * Utiliza el array de colores para definir
-     * aleatoriamente un color y utilizarlo 
+     * aleatoriamente un color y utilizarlo
      * donde se defina.
+     * 
      * @return
      */
     private String getColor() {
@@ -51,11 +52,11 @@ public class ArroyoJuan {
     }
 
     /**
-     * Realiza una impresion de una señal grafica, 
-     * solicita al usuario el nivel entre 0-50 y 
-     * y el programa genera distintas señales 
-     * aleatorias. Generando asi señales de 
-     * distintos colores usando el metodo 
+     * Realiza una impresion de una señal grafica,
+     * solicita al usuario el nivel entre 0-50 y
+     * y el programa genera distintas señales
+     * aleatorias. Generando asi señales de
+     * distintos colores usando el metodo
      * getColor();
      * 
      */
@@ -73,13 +74,18 @@ public class ArroyoJuan {
             System.out.print(getColor() + " ".repeat(spaceLength) + "-".repeat(lengthHyphen[i]));
             System.out.print("|");
             System.out.print("-".repeat(lengthHyphen[i]) + "\n" + RESET);
+            try {
+                Thread.sleep(150);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
         System.out.println();
     }
 
     /**
-     * Solicita al usuario que ingrese el nivel 
+     * Solicita al usuario que ingrese el nivel
      * que el usuario desee realizar.
      * 
      * @return

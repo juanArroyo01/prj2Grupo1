@@ -1,5 +1,3 @@
-
-import java.security.Key;
 import Utils.DataReader.KeyReader;
 import arrays.BenavidesJakeAr;
 import arrays.CasaFernandoAry;
@@ -63,12 +61,12 @@ public class App {
                 BenavidesJakeCar jbcar = new BenavidesJakeCar();
                 BenavidesJakeLo jbLo = new BenavidesJakeLo();
                 BenavidesJakeRe jbRe = new BenavidesJakeRe();
-                
+
                 CasaAntonelasn acsn = new CasaAntonelasn();
                 CasaAntonelasc acsc = new CasaAntonelasc();
                 CasaAntonelafig acfig = new CasaAntonelafig();
-                cadenaCaracteres.CasaAntonela acCc= new cadenaCaracteres.CasaAntonela();
-                recursividad.CasaAntonela acr= new recursividad.CasaAntonela();
+                cadenaCaracteres.CasaAntonela acCc = new cadenaCaracteres.CasaAntonela();
+                recursividad.CasaAntonela acr = new recursividad.CasaAntonela();
                 loadings.CasaAntonela aclg = new loadings.CasaAntonela();
 
                 // Variable
@@ -275,30 +273,28 @@ public class App {
                 System.out.println("\nCadena 3");
                 acCc.Cadenacaracteres03Ac();
 
-                System.out.println("\nCadena4"); 
+                System.out.println("\nCadena4");
                 ccsfca.scC04();
-
 
                 System.out.println("\nCadena 5");
                 System.out.println("\nIngrese la frase a invertir");
                 mccc.cmcc05(KeyReader.cadenaFlujoEntrada());
-                
 
                 System.out.println("\nCadena 6");
                 sc06.serieCadenaCaracterC06();
-
 
                 System.out.println("\nCadena 7");
                 System.out.println("\nIngrese la frase que desee poner en mayusculas.");
                 cadena = jacc.jaC07(KeyReader.cadenaFlujoEntrada());
                 System.out.println("Salida: " + cadena);
-          
+
                 System.out.println("\nCadena 8");
                 jbcar.jbC08();
 
+                
+
                 System.out.println("\nCadena 9");
                 acCc.Cadenacaracteres09Ac();
-
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -306,22 +302,19 @@ public class App {
                 System.out.println("\nArrays 1");
                 ccsfA.csA01();
 
-
                 System.out.println("\nArrays 2");
                 mca.cma02(KeyReader.numeroFlujoEntrada(), KeyReader.caracterFlujoEntrada());
 
                 System.out.println("\nArrays 3");
                 sa03.SeriearrayA3();
 
-
                 System.out.println("\nArrays 4");
                 System.out.println("\nIngrese nombre y apellido.");
                 jaa.jaA04(KeyReader.cadenaFlujoEntrada(), KeyReader.cadenaFlujoEntrada());
-                
+
                 System.out.println("\nArrays 5");
                 System.out.println("Ingrese sus nombre o apellidos");
                 jbAr.jbA05(KeyReader.cadenaFlujoEntrada());
-
 
                 System.out.println("\n----------------------------------------------------------\n");
 
@@ -348,13 +341,12 @@ public class App {
                 System.out.println("\nLoading 7");
                 aclg.Loading07Ac();
 
-
                 System.out.println("\nLoading 8");
                 csLo.scLo8();
 
                 System.out.println("\nLoading 9");
                 mcl.cml09(KeyReader.cadenaFlujoEntrada());
-          
+
                 System.out.println("\nLoading 10");
                 sl10.SerieaLoadingL10();
 
@@ -367,7 +359,6 @@ public class App {
                 System.out.println("\n----------------------------------------------------------\n");
 
                 System.out.println("\nRecursividad:");
-
 
                 System.out.println("\nRecursividad 1.- Factorial");
                 acr.Recursividad01Ac();
@@ -385,7 +376,6 @@ public class App {
                 System.out.println("\nRecursividad 5.- Conteo progresivo");
                 System.out.println("Ingrese el numero límite.");
                 jar.jaR05(KeyReader.numeroFlujoEntrada());
-
 
                 System.out.println("\nRecursividad 6.- Conteo regresivo");
                 jbRe.jbR06(KeyReader.numeroFlujoEntrada());
